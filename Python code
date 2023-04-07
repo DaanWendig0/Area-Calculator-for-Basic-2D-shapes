@@ -1,0 +1,47 @@
+inp = ""
+while inp != "rectangle" and inp != "circle" and inp != "triangle" and inp!= "square" and inp!= "rhombus" and inp!= "paralellogram":
+    inp = input("Would you like to calculate the area of a rectangle, circle, triangle, square, rhombus or paralellogram? : ")
+    if inp != "rectangle" and inp != "circle" and inp != "triangle" and inp!= "square" and inp!= "rhombus" and inp!= "paralellogram":
+        print("You must type 'rectangle','circle','triangle','square','rhombus' or 'paralellogram'.")
+
+if inp == "rectangle":
+    l = float(input("Enter the length of a side of the rectangle ="))
+    u = float(input("Enter the breadth of the side of the rectangle ="))
+    b = l * u
+    print("Area of the rectangle =", b)
+    
+   
+
+
+if inp == "circle":
+    k = float(input("Enter the Radius of the circle ="))
+    a = 22/7 * k**2
+    print("Area of the circle =", a)
+    
+
+
+if inp == "triangle":
+    o = float(input("Enter the length of the base ="))
+    m = float(input("Enter the length of the height ="))
+    n = 1/2 * o * m
+    print("Area of the triangle =",n)
+
+
+if inp == "square":
+    d = float(input("Enter the length of the side ="))
+    u = d*d
+    print("Area of the square =",u)
+
+
+if inp == "rhombus":
+    y = float(input("Enter the length of one of the diagnols ="))
+    Y = float(input("Enter the length of the other diagnol ="))
+    j = y*Y/2
+    print("Area of the rhombus =",j)
+
+
+if inp == "paralellogram":
+    A = float(input("Enter the length of the base ="))
+    B = float(input("Enter the length of the height ="))
+    J = A*B
+    print("Area of the paralellogram =",J)
